@@ -26,7 +26,10 @@ function Pesquisa () {
         <PesquisaContainer>
             <Titulo>Já sabe por onde começar?</Titulo>
             <Subtitulo>Encontre seu livro em nossa estante</Subtitulo>
-            <Input placeholder="Escreva sua próxima leitura" />
+            <Input placeholder="Escreva sua próxima leitura" 
+            onBlur={evento => console.log (evento.target.value)}
+            />
+            
         </PesquisaContainer>
     )
 }
